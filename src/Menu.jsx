@@ -7,13 +7,7 @@ const Menu = () => {
       <h2>Our Menu</h2>
       <ul className="pizzas">
         {pizzaData.map((pizza) => (
-          <Pizza
-            key={pizza.name}
-            name={pizza.name}
-            ingredients={pizza.ingredients}
-            price={pizza.price}
-            photoName={pizza.photoName}
-          />
+          <Pizza key={pizza.name} pizzaObj={pizza} />
         ))}
       </ul>
     </main>
